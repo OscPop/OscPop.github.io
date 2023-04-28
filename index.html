@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="en"></html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Oscar Popp Larsen</title>
+    <style>
+        p {
+            color: coral;
+            font-size: large;
+            background-color: aqua;
+        }
+
+        body {
+            background-color: rgb(114, 103, 103);
+        }
+
+        .column {
+            flex: 33.33%;
+            height: 200px;
+            padding: 10px;
+            margin: 5px;
+            background-color: #cccccc;
+            text-align: center;
+            }
+        .container {
+            display: flex;
+            }	
+    </style>
+</head>
+
 <body>
-<h1 style="color:blue;">Oscar Popp Larsen</h1>
-<p style="color:red;">This is my personal portfolio</p>
+<h1>Oscar Popp Larsen</h1>
+<p>Welcome to my personal portfolio</p>
 <p>It is hosted by GitHub pages</p>
-<ul>
-    <l>
-        This is a list I think?
-    </l>
-</ul>
+<div class="container">
+    <div class="column">
+        <p>I'm in col 1?</p>
+    </div>
+    <div class="column">
+        <p>I'm in col 2?</p>
+    </div>
+    <div class="column">
+        <p>I'm in col 3?</p>
+    </div>
+  </div>
 </body>
 </html>
