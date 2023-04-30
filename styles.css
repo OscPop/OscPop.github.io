@@ -91,3 +91,28 @@ body {
     border: 10px;
     border-radius: 10px;
 }
+
+/* link colors */
+a:link {
+    color: rgb(242, 171, 38); 
+    background-color: transparent; 
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(185, 117, 9);
+    background-color: transparent;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
+  a:active {
+    color: yellow;
+    background-color: transparent;
+    text-decoration: underline;
+  }
