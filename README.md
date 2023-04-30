@@ -7,3 +7,4 @@ This is a work in progress and is not to be taken seriously yet. I will add more
 * Give the website a theme
 * Show off some projects in a nice way
 * Include some dynamic elements
+* I will also need to practice writing better commit messages ...
