@@ -1,34 +1,40 @@
 h1.title {
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: rgb(238, 134, 7);
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
     padding: 10px;
     margin: 5px;
 }
 
+h2.h2-about-box {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
 .btn-group button {
-    background-color: #04AA6D; /* Green background */
-    border: 1px solid green; /* Green border */
-    color: white; /* White text */
+    background-color: #a5beb5; /* Green background */
+    border: 2px solid rgb(160, 108, 11); /* Green border */
+    color: rgb(36, 31, 31); /* White text */
     padding: 10px 24px; /* Some padding */
     cursor: pointer; /* Pointer/hand icon */
     float: center; /* Float the buttons side by side */
+    border-radius: 5px;
   }
 
   
   /* Add a background color on hover */
   .btn-group button:hover {
-    background-color: #3e8e41;
+    background-color: #545f54;
   }
 
 
 
 body {
-    background-color: rgb(114, 103, 103);
+    background-color: rgb(2, 30, 30);
 }
 
-.column {
+.column-3 {
     flex: 33.33%;
     height: 200px;
     padding: 10px;
@@ -45,9 +51,19 @@ body {
 }	
 
 .top-card {
-    background-color: cadetblue;
+    background-color: rgb(0, 5, 5);
     text-align: center;
-    height: 150px;
+    height: 120px;
+    padding: 10px;
+    margin: 5px;
+    border: 10px;
+    border-radius: 10px;
+}
+
+.about-box {
+    background-color: rgb(200, 209, 209);
+    text-align: center;
+    height: 120px;
     padding: 10px;
     margin: 5px;
     border: 10px;
