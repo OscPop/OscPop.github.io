@@ -50,6 +50,10 @@ header {
     justify-content: space-between;
     align-items: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
 }
 
 header h1 {
@@ -198,7 +202,12 @@ main {
     color: var(--dark_orange);
 }
 
-
+/* Container styles */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 3rem; /* Add padding to create space between the header and the content */
+  }
 
 /* Tags styles */
 .tags {
