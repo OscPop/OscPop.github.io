@@ -156,12 +156,13 @@ main {
     border-radius: 4px;
     font-size: 1rem;
     transition: background-color 0.3s;
+    text-decoration: none; /* Add this line to remove the underline from the text */
 }
 
 .socials a.social-btn:hover {
     background-color: #0056b3;
     color: #fff;
-    text-decoration: none;
+    text-decoration: none; /* Add this line to ensure no underline appears on hover */
 }
 
 .socials a.social-btn i {
