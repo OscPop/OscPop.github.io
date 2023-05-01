@@ -71,12 +71,6 @@ nav ul li a:hover::after {
     background-color: #444;
 }
 
-/* Main content styles */
-main {
-    padding: 2rem;
-    max-width: 100%; /* Change max-width to 100% */
-    margin: 0 auto;
-}
 
 
 section {
@@ -94,15 +88,22 @@ footer {
 
 
 
+/* Main content styles */
+main {
+    padding: 2rem;
+    max-width: 1200px; /* Set max-width back to the original value */
+    margin: 0 auto;
+}
+
 /* Projects styles */
 .project {
     display: block;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 0 1rem 2rem 1rem;
+    margin: 0 auto 2rem auto; /* Center the project card */
     text-decoration: none;
     color: inherit;
-    width: calc(100% - 4rem);
+    width: 100%; /* Set the width to 100% */
 }
 
 .project:hover {
@@ -119,23 +120,50 @@ footer {
 }
 
 .image-box {
-    width: 50%;
-    padding: 0 1rem 1rem 1rem; /* Add left, right, and bottom padding to the image box */
+    width: 40%; /* Decrease the width to 40% */
+    padding: 0 1rem 1rem 1rem;
 }
 
 .project img {
     display: block;
     width: 100%;
     height: auto;
+    aspect-ratio: 1 / 1; /* Set the aspect-ratio to 1:1 to make the image a square */
     object-fit: cover;
 }
 
 .project-description {
     padding: 2rem;
-    width: calc(50% - 1rem); /* Subtract the image box's right padding from the project description's width */
+    width: calc(60% - 1rem); /* Increase the width to 60% */
 }
 
 .project p {
     margin: 0;
 }
 
+
+
+/* Footer styles */
+/* ... */
+
+.socials a.social-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.socials a.social-btn:hover {
+    background-color: #0056b3;
+    color: #fff;
+    text-decoration: none;
+}
+
+.socials a.social-btn i {
+    margin-right: 0.5rem;
+}
