@@ -110,11 +110,20 @@ main {
 }
 
 /* Projects styles */
+.project-title-wrapper {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    background-color: var(--light_grey); /* Set the background color to orange */
+    border-radius: 4px; /* Add rounded corners */
+    margin-bottom: 1rem; /* Add margin to match the project content wrapper */
+    padding: 0.5rem; /* Add padding to create a margin around the title */
+  }
+
 
   
 .project-title {
     margin: 0; /* Remove the default margin */
-    padding-bottom: 1rem; /* Add padding to the bottom of the title */
     color: var(--dark_orange);
 }
   
