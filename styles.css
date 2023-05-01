@@ -1,6 +1,16 @@
 /* Import a Google Font */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --light_orange: #ffcc80; 
+    --dark_orange: #ff9900;
+    --light_grey: #918d8d;
+    --dark_grey: #4d4747;
+  }
+
 /* General styles */
 html {
     box-sizing: border-box;
@@ -14,12 +24,12 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
-    background-color: #f4f4f4;
+    background-color: var(--light_grey);
     color: #333;
 }
 
 h1, h2 {
-    color: #444;
+    color: var(--dark_orange);
     margin-bottom: 0.5rem;
 }
 
@@ -27,9 +37,12 @@ p {
     margin-bottom: 1.5rem;
 }
 
+
+
+
 /* Header styles */
 header {
-    background: #ffffff;
+    background: var(--dark_grey);
     padding: 1rem 2rem;
     display: flex;
     justify-content: space-between;
@@ -53,7 +66,7 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #444;
+    color: var(--dark_orange);
     text-decoration: none;
     font-weight: 700;
     padding: 0.5rem 0;
@@ -68,7 +81,7 @@ nav ul li a:hover::after {
     bottom: 0;
     height: 2px;
     width: 100%;
-    background-color: #444;
+    background-color: var(--dark_orange);
 }
 
 
@@ -79,7 +92,7 @@ section {
 
 /* Footer styles */
 footer {
-    background: #ffffff;
+    background: var(--dark_grey);
     padding: 1rem 2rem;
     text-align: center;
     box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
@@ -98,7 +111,7 @@ main {
 /* Projects styles */
 .project {
     display: block;
-    background-color: #fff;
+    background-color: var(--dark_grey);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     margin: 0 auto 2rem auto; /* Center the project card */
     text-decoration: none;
@@ -112,6 +125,7 @@ main {
 
 .project-title {
     padding: 1rem 2rem;
+    color: var(--dark_orange);
 }
 
 .project-content {
@@ -139,6 +153,7 @@ main {
 
 .project p {
     margin: 0;
+    color: var(--dark_orange);
 }
 
 
@@ -150,7 +165,7 @@ main {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #007bff;
+    background-color: var(--dark_orange);
     color: #fff;
     padding: 0.5rem 1rem;
     border-radius: 4px;
@@ -160,7 +175,7 @@ main {
 }
 
 .socials a.social-btn:hover {
-    background-color: #0056b3;
+    background-color: var(--light_orange);
     color: #fff;
     text-decoration: none; /* Add this line to ensure no underline appears on hover */
 }
