@@ -1,85 +1,59 @@
 <!DOCTYPE html>
-<html lang="en"></html>
+<html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <!-- Link to your CSS file -->
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="fa_all.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100;700&display=swap" rel="stylesheet">
-    
-    <title>Oscar Popp Larsen</title>
 
+    <!-- Link to your JavaScript file -->
+    <script src="scripts.js" defer></script>
 </head>
 
 
 <body>
-    <!-- Top card -->
-    <div class="top-card">
-        <h1 class="title">Oscar Popp Larsen</h1>
+    <header>
+        <h1>My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <!-- Social media buttons -->
-        <div class="btn-group">
-            <button onclick="location.href='https://www.linkedin.com/in/oscar-popp-larsen/'"><i class="fa fa-linkedin-square"></i> LinkedIn</button>
-            <button onclick="location.href='https://github.com/OscPop'"><i class="fa fa-github"></i> GitHub</button>
-            <button onclick="location.href='https://leetcode.com/OscarPopp/'"><i class="fa fa-leetcode"></i> Leetcode</button>
-            <button onclick="location.href='https://www.codecademy.com/profiles/PoppoMeister'"><i class="fa fa-codecademy"></i> Codecademy</button>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hello, I'm [Your Name]. I'm a [Your Profession].</p>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <!-- Add your projects here -->
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Get in touch with me through [Your Contact Information].</p>
+        </section>
+    </main>
+
+    <!-- Add the footer section -->
+    <!-- Add the footer section -->
+    <footer>
+        <div class="socials">
+            <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="fa fa-github"></i> GitHub
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="fa fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://leetcode.com/yourusername" target="_blank" rel="noopener noreferrer" class="social-btn">
+                <i class="fas fa-code"></i> LeetCode
+            </a>
         </div>
-    </div>
-
-
-    <!-- About section -->
-    <div>
-        <div class="about-box">
-            <h2 class="h2-about-box">About</h2>
-            <p>I'm a Junior Data Scientist with a bachelor's degree in <a href="https://www.kth.se/utbildning/civilingenjor/elektroteknik" target="_blank" rel="noreferrer">Electrical Engineering</a> and a master's degree in <a href="https://www.kth.se/en/studies/master/systems-control-robotics/msc-systems-control-and-robotics-1.8733" target="_blank" rel="noreferrer">Robotics</a>, both from KTH Royal Institute of Technology.</p>
-        </div>
-    </div>
-
-
-    <!-- 3 column layout -->
-    <div class="container">
-        <div class="column-3">
-            <p>I'm in col 1?</p>
-        </div>
-        <div class="column-3">
-            <p>I'm in col 2?</p>
-        </div>
-        <div class="column-3">
-            <p>I'm in col 3?</p>
-        </div>
-    </div>
-
-
-    <!-- Projects section -->
-    <div class="projects-box">
-
-        <!-- Header -->
-        <div class="projects-box-title">
-            <h2 class="h2-project-box">Projects</h2>
-            <p>Here are some examples of projects</p>
-        </div>
-
-        <!-- Projects -->
-        <div class="projects-box-projects">
-            <div class="column-3">
-                <h3>Scrape Swedish NAO reports</h3>
-                <p><a href="https://github.com/OscPop/skrapa_riksrevisionen">GitHub</a></p>
-                <div class="projects-box-img-box">
-                    <img class="projects-img" src="images/riksrevisionen.png" alt="Riksrevisionen">
-                </div>
-            </div>
-            <div class="column-3">
-                <h3>Automatic Outlook morning email</h3>
-                <p><a href="https://github.com/OscPop/schemalagda-aktiviteter">GitHub</a></p>
-            </div>
-            <div class="column-3">
-                <h3>FIFA Rankings EDA</h3>
-                <p><a href="https://github.com/OscPop/FIFA-World-Cup-Rankings-EDA">GitHub</a></p>
-            </div>
-        </div>
-    </div>
-
+    </footer>
 </body>
 </html>
