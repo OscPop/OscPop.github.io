@@ -158,6 +158,24 @@ main {
 
 
 
+/* Tags styles */
+.tags {
+    margin-top: 1rem;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #ffa500; /* Set the background color to orange */
+    color: #fff; /* Set the text color to white */
+    padding: 0.25rem 0.5rem; /* Add some padding */
+    border-radius: 4px; /* Add rounded corners */
+    font-size: 0.75rem; /* Set the font size smaller */
+    margin-right: 0.5rem; /* Add some space between tags */
+    margin-bottom: 0.5rem; /* Add some space below tags */
+}
+
+
+
 /* Footer styles */
 /* ... */
 
