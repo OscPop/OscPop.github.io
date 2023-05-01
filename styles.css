@@ -44,7 +44,7 @@ p {
 /* Header styles */
 header {
     background: var(--dark_grey);
-    padding: 1rem 2rem;
+    padding: 0.1rem 2rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -161,13 +161,21 @@ main {
 }
   
 .project-description {
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem; /* Add padding to create a margin around the description */
+    padding: 0rem; /* Add padding to create a margin around the description */
 }
 
+.description-tags-wrapper {
+    background-color: var(--dark_grey); /* Set the background color */
+    border-radius: 4px; /* Add rounded corners */
+    padding: 1rem; /* Add padding to create a margin around the content */
+    width: 50%; /* Set the width to 50% */
+    margin-right: 1rem;
+  }
+  
 .project img {
     display: block;
     width: 100%;
@@ -193,7 +201,7 @@ main {
 
 .tag {
     display: inline-block;
-    background-color: #ffa500; /* Set the background color to orange */
+    background-color: var(--dark_orange); /* Set the background color to orange */
     color: #fff; /* Set the text color to white */
     padding: 0.25rem 0.5rem; /* Add some padding */
     border-radius: 4px; /* Add rounded corners */
