@@ -8,7 +8,7 @@
     --light_orange: #ffcc80; 
     --dark_orange: #ff9900;
     --light_grey: #918d8d;
-    --dark_grey: #4d4747;
+    --dark_grey: #332e2e;
     --dark: #333;
   }
 
@@ -25,8 +25,9 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
-    background-color: var(--dark);
     color: #333;
+    background-color: var(--dark);
+    background-image: linear-gradient(to bottom right, rgb(1, 6, 48), rgb(80, 74, 90));
 }
 
 h1, h2 {
@@ -199,7 +200,7 @@ main {
 
 .project p {
     margin: 0;
-    color: var(--dark_orange);
+    color: var(--white);
 }
 
 /* Container styles */
