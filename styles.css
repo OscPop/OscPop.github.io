@@ -9,6 +9,7 @@
     --dark_orange: #ff9900;
     --light_grey: #918d8d;
     --dark_grey: #4d4747;
+    --dark: #333;
   }
 
 /* General styles */
@@ -24,7 +25,7 @@ body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
-    background-color: var(--light_grey);
+    background-color: var(--dark);
     color: #333;
 }
 
@@ -109,6 +110,20 @@ main {
 }
 
 /* Projects styles */
+
+  
+.project-title {
+    margin: 0; /* Remove the default margin */
+    padding-bottom: 1rem; /* Add padding to the bottom of the title */
+    color: var(--dark_orange);
+}
+  
+.project-content-wrapper {
+    background-color: var(--light_grey); /* Set the background color to orange */
+    border-radius: 4px; /* Add rounded corners */
+    overflow: hidden; /* Add this line to prevent overflow */
+}
+
 .project {
     display: block;
     background-color: var(--dark_grey);
@@ -117,16 +132,14 @@ main {
     text-decoration: none;
     color: inherit;
     width: 100%; /* Set the width to 100% */
+    padding: 1rem;
 }
 
 .project:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.project-title {
-    padding: 1rem 2rem;
-    color: var(--dark_orange);
-}
+
 
 .project-content {
     display: flex;
@@ -134,8 +147,16 @@ main {
 }
 
 .image-box {
-    width: 40%; /* Decrease the width to 40% */
-    padding: 0 1rem 1rem 1rem;
+    width: 50%;
+    padding: 1rem; /* Add padding to create a margin around the image */
+}
+  
+.project-description {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem; /* Add padding to create a margin around the description */
 }
 
 .project img {
@@ -144,12 +165,10 @@ main {
     height: auto;
     aspect-ratio: 1 / 1; /* Set the aspect-ratio to 1:1 to make the image a square */
     object-fit: cover;
+    border-radius: 4px;
 }
 
-.project-description {
-    padding: 2rem;
-    width: calc(60% - 1rem); /* Increase the width to 60% */
-}
+
 
 .project p {
     margin: 0;
@@ -173,6 +192,8 @@ main {
     margin-right: 0.5rem; /* Add some space between tags */
     margin-bottom: 0.5rem; /* Add some space below tags */
 }
+
+
 
 
 
